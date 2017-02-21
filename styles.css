@@ -1,0 +1,580 @@
+@charset "utf-8";
+/*to restrict the size to the container*/
+img, object, embed, video {
+	max-width: 100%;
+}
+a {
+	text-decoration:none;
+}
+body
+{
+	font-family:Arial;
+}
+.mainContainer
+{
+	overflow:hidden;
+	padding:0;
+	margin:0;
+
+}
+#hideAll
+ {
+   display: block;
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 99; /* Higher than anything else in the document */
+
+ }
+#hideAll img
+ {
+	 width:10%;
+	 position:fixed;
+	 top:40%;
+	 left:45%;
+ }
+#hideAll p{
+	position:fixed;
+	top:55%;
+	left:46%;
+	color: gray;
+}
+/*---------------------------------------------------HEADER-------------------------------------------------*/
+#header
+{
+	position:relative;
+	padding-top:5px;
+	overflow:hidden;
+}
+#header #logo 
+{
+	float:left;
+	width:120px;
+	margin-left:3%;
+}
+#header #menu
+{
+	list-style-type: none;
+	float:right;
+	width:65vw;	
+	text-align:right;
+	padding-top:15px;
+	margin:0;
+	padding-right:2vw;
+
+}
+#header #menu li
+{
+    display: inline-block;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#header #menu a
+{
+	font-size:16px;
+	padding-left:1.5vw;
+	padding-right:1.5vw;
+	color:#000000;	
+}
+#header #menu a:visited,
+{
+	color:#009933;
+}
+/*styleing of the activeLink is done in html code*/
+/*---------------------------------------------------Sub menu---------------------------------------------*/
+#header #subMenu
+{
+	float:left;
+	width:100vw;
+	background-color:#009933;
+	height:30px;
+	color:#FFFFFF;
+	text-align:center;
+	padding-top:10px;
+	list-style-type: none;
+	margin:0;
+}
+#header #subMenu li
+{
+	display:inline-block;
+	padding-left:1vw;
+	padding-right:1vw;
+}
+#header #subMenu li.activeSubLink
+{
+	font-weight:bold;
+}
+#subMenu a
+{
+	color:#ffffff;	
+	font-size:17px;
+}
+#subMenu a:active
+{
+	color:#ffffff;
+	font-size:17px;
+}
+#subMenu a:visited
+{
+	color:#ffffff;
+	font-size:17px;
+}
+#subMenu a:hover
+{
+	color:#D2FDB0;
+	font-size:17px;
+}
+#headerPhoto
+{
+	width:100vw;
+	overflow:hidden;
+}
+#headerMoto
+{
+	color:#FFC455;
+	position:absolute;
+	top:19vw;
+	text-align:center;
+	float:left;
+	width:98%;
+	margin:auto;
+	font-size:3vw;	
+}
+#headerMoto1
+{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+}
+#headerMoto2
+{
+	margin:0;
+	padding:0;
+}
+#headerMotoAboutUs
+{
+	background-color:#000000;
+	position:absolute;
+	display:table;
+	top:28vw;
+	opacity:0.6;
+	width:100vw;
+	height:5vw;
+	overflow:hidden;
+}
+#headerMotoAboutUs p
+{
+	color:#FFC455;
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+	font-size:3vw;
+	margin:auto;
+	padding:0;
+	opacity:1;
+
+}
+/*-----------------------------------Title---------------------------------*/
+#pageTitle
+{	
+width:100%;
+	text-align:center;
+	float:left;
+}
+#pageMainTitle
+{
+	font-size:30px;
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	margin-top:30px;
+	margin-bottom:10px;
+}
+#pageSubTitle
+{
+	font-size:16px;
+	margin:0;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:#D52424;
+	color:white;
+	
+}
+
+
+
+
+
+
+
+/*---------------------------------------------------ContentForPages Except index.html---------------------------------------------*/
+#contentWrapper
+{
+}
+.scrollToTop{
+	width:50px;
+	padding:10px; 
+	text-align:center; 
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	bottom:0px;
+	right:40px;
+	display:none;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+#banner
+{
+	float:left;
+}
+#middle #moto_big
+{
+	position:absolute;
+	top:13vw;
+	text-align:center;
+	float:left;
+	width:98%;
+	color:white;
+	font-size:3vw;	
+}
+#middle #moto_small
+{
+	position:absolute;
+	top:18vw;
+	text-align:center;
+	float:left;
+	width:98%;
+	color:white;
+	font-size:1.5vw;
+}
+#middle #whattodo
+{
+	position:absolute;
+	top:23vw;
+	left:39%;
+	text-align:center;
+	float:left;
+	width:98%;
+	color:white;
+	background-color:red;
+	font-size:1.5vw;
+	float:left;
+	width:12%;
+	padding-left:5%;
+	padding-right:5%;
+	padding-top:1%;
+	padding-bottom:1%;
+	opacity:0.7;
+}
+#bottom
+{
+
+}
+#bottom #events
+{
+	text-align:center;
+	width:24%;
+	float:left;
+	background-color:#009900;
+	padding:0.4%;
+	font-weight:900;
+	font-size:1.5vw;
+	color:white;
+}
+#bottom #videos
+{
+	text-align:center;
+	width:24%;
+	float:left;
+	background-color:#ED1217;
+	padding:0.4%;
+	font-weight:900;
+	font-size:1.5vw;
+	color:white;
+}
+#bottom #mentorship
+{
+	text-align:center;
+	width:24%;
+	float:left;
+	background-color:#FF7F00;
+	padding:0.4%;
+	font-weight:900;
+	font-size:1.5vw;
+	color:white;
+}
+#bottom #inthenews
+{
+	text-align:center;
+	width:24%;
+	float:left;
+	background-color:#FFFFFF;
+	padding:0.4%;
+	font-weight:900;
+	font-size:1.5vw;
+	color:black;
+}
+#bottom p
+{
+	margin:0;
+	padding:0;
+	margin-top:5px;
+	font-weight:100;
+	font-size:1.3vw;	
+}
+#bottom a, a:active, a:visited
+{
+	 color:#ffffff;
+}
+#bottom 
+{
+	 color:#ffffff;
+}
+#bottom #inthenews a, a:visited
+{
+	color:#000000;
+}
+
+
+
+
+/*-----------------------------------About Us---------------------------------*/
+#aboutUsContent
+{
+	margin-left:3%;
+	
+}
+#aboutUsContent #whatIsGB
+{
+	
+}
+#aboutUsContent #missionGB
+{
+	
+}
+#valuesGB  #valuesGB_c1
+{
+	width:200px;
+}
+#valuesGB  p
+{
+	padding:0;
+	margin:0;
+	margin-bottom:10px;
+	font-size:16px;
+}
+
+
+
+
+/*-----------------------------------Events---------------------------------*/
+#eventsTable
+{
+ 	font-size:16px;
+	margin:auto;
+	margin-top:150px;
+
+}
+
+.eventDateTime
+{
+	width:140px;
+	overflow:hidden;
+	vertical-align:middle;
+}
+
+.eventInfo
+{
+	width:50vw;
+	padding-left:5vw;
+	padding-right:5vw;
+	border-bottom-style:solid;
+	border-bottom-color:#339900;
+	border-bottom-width:thin;
+}
+
+.eventTitle
+{
+	font-size:20px;
+	color:#339900;
+	
+}
+
+.eventSpeaker
+{
+
+}
+
+.eventVenue
+{
+	font-weight:bold;
+}
+
+.eventPoster
+{
+	width:140px;
+}
+
+#eventsTable #registerEventBut
+{
+	text-align:center;
+	width:120px;
+	padding:10px;
+	background-color:#FF9900;
+	color:#ffffff;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+#eventsTable #registerEventBut a, a:active, a:hover, a:visited
+{
+	color:#ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------Blog Events-------------------------------*/
+#wrapper_blogSideNav
+{
+	float:right;
+	width:450px;
+	height:1000px;
+}
+
+#blogSideNav
+{
+	background-color:#F4A022;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	overflow:hidden;
+	padding-top:5px;
+	padding-bottom:20px;
+}
+
+#blogSideNav p
+{
+	color:#ffffff;
+	font-weight:bold;
+	padding-left:40px;
+	font-size:26px;
+}
+
+#blogSideNav ul
+{
+	list-style-type:none;
+}
+
+#blogSideNav li
+{
+	margin-bottom:15px;
+	font-size:18px;
+}
+
+#blogSideNav a, a:active, a:visited
+{
+	color:#ffffff;
+}
+
+#wrapper_blogArticle
+{
+	overflow:hidden;
+	background-color:#ffffff;
+	padding-left:3vw;	
+}
+
+.blogArticle
+{
+	border-bottom:solid;/*for the last blog it is border:none mentioned in html codes*/
+	border-bottom-width:thin;
+	border-color:#339900;
+	padding-top:10px;
+	font-size:16px;
+}
+
+.blogArticle .blogTitle
+{
+	font-weight:bold;
+	font-size:26px;
+	color:#339900;
+}
+
+.blogArticle img
+{
+	width:400px;
+}
+
+
+
+
+
+/*------------------------------------------------In the News---------------------------------------------------*/
+#tableInTheNews
+{
+	width:70vw;
+	margin:auto;
+	margin-top:50px;
+}
+
+.newsInfo
+{
+	width:50vw;
+}
+
+.newsThumbnail
+{
+	width:20vw;
+	text-align:center;
+}
+
+
+
+.newsDate
+{
+	width:190px;
+	text-align:center;
+	color:#ffffff;
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color:#D52424;
+}
+
+.newsTitle
+{
+	font-size:22px;
+	font-weight:bold;
+}
+
+.newsPublisher
+{
+	font-size:18px;
+	font-weight:bold;
+}
+
+.newsExp
+{
+	font-size:18px;
+}
+
+
+
+#footer
+{
+	text-align:center;
+	width:98vw;
+	float:left;
+	margin-top:20px;
+	font-size:14px;
+}
