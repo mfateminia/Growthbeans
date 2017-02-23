@@ -571,35 +571,80 @@ width:100%;
 
 
 /*------------------------------------------------Videos---------------------------------------------------*/
+#videoPack
+{
+	margin-top: 20px;
+	margin-left:20px;
+	height:650px;
+}
+
 #videoEmbeded
 {
-	width: 500px;
+	margin:0;
+	padding-left:2%;
+	padding-right:2%;
+	padding-top:10px;
+	padding-bottom:10px;
+	width: 65%;
+	height:405px;
+	margin-right:5px;
 	float:left;
+	border: solid thin #D8D8D8;
 }
 
 #videoEmbeded iframe
 {
-	width: 500px;
-	height:300px;
+	width: 100%;
+	height:350px;
+}
+
+#videoBiography
+{
+	clear:left;
+	font-size:15px;
+	padding-left:2%;
+	padding-top:5px;
+	background-color:#D8D8D8;
+	height:220px;
+	width:93%;
+}
+
+#videoBiography img
+{
+	float:left;
+	height:150px;
+	margin-right: 20px;
 }
 
 #videoPlayList
 {
-	width:500px;
+	width:25%;
+	height:425px;
+	overflow-y: scroll;
 	float:left;
-	text-align: right;
+	border: solid thin #D8D8D8;
 }
 
 #videoPlayList ul
 {
 	list-style-type: none;
+
+	padding:10px;
+	margin:0;
+	align-content: center;
 }
 
-
-#videoBiography img
+#videoPlayList li
 {
-	float:left;
-	margin-right: 20px;
+	margin:0;
+	padding:0;
+	margin-bottom: 10px;
+}
+
+#videoPoll iframe
+{
+	margin:0;
+	padding:0;
 }
 
 #footer
