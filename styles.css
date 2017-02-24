@@ -378,7 +378,7 @@ width:100%;
 {
  	font-size:16px;
 	margin:auto;
-	margin-top:150px;
+	margin-top:50px;
 
 }
 
@@ -641,7 +641,7 @@ width:100%;
 	margin-bottom: 10px;
 }
 
-#videoPoll iframe
+#videoPoll
 {
 	margin:0;
 	padding:0;
