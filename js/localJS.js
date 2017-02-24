@@ -1,6 +1,10 @@
 function init(){
 	$(document).ready(function(){
 		$("#hideAll").hide();
+
+		$('#closeThePoll').click(function() {
+				$('#videoPoll').fadeToggle();
+		});
 	});
 }
 

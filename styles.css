@@ -575,7 +575,8 @@ width:100%;
 {
 	margin-top: 20px;
 	margin-left:20px;
-	height:650px;
+	height:405px;
+	z-index:0;
 }
 
 #videoEmbeded
@@ -604,6 +605,7 @@ width:100%;
 	font-size:15px;
 	padding-left:2%;
 	padding-top:5px;
+	margin-top:100px;
 	background-color:#D8D8D8;
 	height:220px;
 	width:93%;
@@ -643,8 +645,29 @@ width:100%;
 
 #videoPoll
 {
+	/*display:none;*/
 	margin:0;
 	padding:0;
+	position: absolute;
+	width:98%;
+	opacity:0.9;
+	align-content: center;
+	z-index:98;
+	background-color:white;
+}
+
+#closeThePoll
+{
+	text-align: right;
+	font-weight: bold;
+	font-size: 15px;
+	padding-right:10px;
+	color:#2E64FE;
+}
+
+#closeThePoll a, a:active, a:visited, a:hover
+{
+		color:#2E64FE;
 }
 
 #footer
