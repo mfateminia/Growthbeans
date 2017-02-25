@@ -2,6 +2,10 @@ function init(){
 	$(document).ready(function(){
 		$("#hideAll").hide();
 
+    $('#pollBut').click(function() {
+				$('#videoPoll').fadeIn();
+		});
+
 		$('#closeThePoll').click(function() {
 				$('#videoPoll').fadeToggle();
 		});

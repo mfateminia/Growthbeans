@@ -13,6 +13,15 @@
 <div id="hideAll">
 </div>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div ng-app = "videoPlay" class="mainContainer">
 
 	<div id="header">
@@ -39,21 +48,17 @@
 		</div>
 	</div>
 
-
 		<div id="contentWrapper" ng-controller = "videoCtrl as ctrl">
-
       <div id = "videoPoll">
         <div id = "closeThePoll"><a href="#">Close</a></div>
         <iframe frameborder='0' src='https://poll.fbapp.io/embed/professions-you-would-like-to-know-more-of?api=3.5.1' width='100%'></iframe>
         <script src="https://code-rubik-cdn.s3.amazonaws.com/iframeresizer/3.5.1/host.js"></script>
         <script type='text/javascript'>iFrameResize({ enablePublicMethods: true, minHeight: 230 })</script>
       </div>
-
       <div id="videoPack">
           <div id="videoEmbeded">
-            <div id="videoTitle">Social Work</div>
-            <iframe src="{{ctrl.currentVideoLink}}" allowfullscreen></iframe>
-            <div>{{ctrl.currentVideoTitle}}</div>
+            <div id="videoTitle"><span style = 'font-weight:bold'>Social Work:</span> {{ctrl.currentVideoTitle}}</div>
+            <iframe frameborder='0' src="{{ctrl.currentVideoLink}}" allowfullscreen></iframe>
           </div>
 
           <div id="videoPlayList">
@@ -71,9 +76,15 @@
               Alvin Chen is an internationally licensed Coach and Social Worker, with 11 years of Social Work experience working with families and youths. In the work that he does, he enables non profit organisations to create communities of inclusion and celebrate diversity in people profiles. He promotes sustainable lifestyle practices that self-generate resources and give back toward society and the environment. Watch his videos to find out more on Social Work.
             </p>
           </div>
-          
+          <div id="fb-comments">
+              <div class="fb-comments" data-href="http://www.growthbeans.com" data-numposts="5"></div>
+          </div>
+          <div id="pollWrapper">
+            <a href = "#"><div id="pollBut">
+              Professions you would like to know more of...
+            </div></a>
+          </div>
       </div>
-
 
 
     </div>
