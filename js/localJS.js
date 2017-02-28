@@ -1,14 +1,6 @@
 function init(){
 	$(document).ready(function(){
 		$("#hideAll").hide();
-
-    $('#pollBut').click(function() {
-				$('#videoPoll').fadeIn();
-		});
-
-		$('#closeThePoll').click(function() {
-				$('#videoPoll').fadeToggle();
-		});
 	});
 }
 
@@ -21,6 +13,8 @@ function init(){
 	function videoCtrl(videoService, $sce){
 		var vm = this;
 		var currentIndex = 0;
+		vm.showThePoll = false;
+
 		vm.currentVideoTitle = videoService.videoList[currentIndex].title;
 		vm.currentVideoLink =  $sce.trustAsResourceUrl(videoService.videoList[currentIndex].link);
 		vm.collection = videoService.videoList;
@@ -29,6 +23,15 @@ function init(){
 			vm.currentVideoTitle = videoService.videoList[currentIndex].title;
 			vm.currentVideoLink =  $sce.trustAsResourceUrl(videoService.videoList[currentIndex].link);
 		};
+
+
+		vm.openPoll = function(){
+			vm.showThePoll = true;
+		}
+
+		vm.closePoll = function(){
+			vm.showThePoll = false;
+		}
 	}
 
 	function videoService(){

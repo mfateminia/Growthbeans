@@ -4,30 +4,30 @@
 
     <link href="styles.css" rel="stylesheet" type="text/css">
     <script src="js/localJS.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
-      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 		<script language="javascript" type="text/javascript">
         /* For the navigation menu to move with scrolling
-		
+
             $(function(){
                 function moveFloatMenu() {
                     var menuOffset = menuYloc.top + $(this).scrollTop() + "px";
                     $('#blogSideNav').animate({top:menuOffset},{duration:500,queue:false});
                 }
-             
+
                 menuYloc = $('#blogSideNav').offset();
-             
+
                 $(window).scroll(moveFloatMenu);
-             
+
                 moveFloatMenu();
             });
         */
-		
-		
-		
+
+
+
 		//to scroll up the page
 				$(document).ready(function(){
-			
+
 			//Check to see if the window is top if not then display button
 			$(window).scroll(function(){
 				if ($(this).scrollTop() > 1000) {
@@ -36,30 +36,30 @@
 					$('.scrollToTop').fadeOut();
 				}
 			});
-			
+
 			//Click event to scroll to top
 			$('.scrollToTop').click(function(){
 				$('html, body').animate({scrollTop : 0},800);
 				return false;
 			});
-			
+
 		});
 
         </script>
 
-    
+
 </head>
-  
+
 <html>
 <body onload = "init()">
 <div id="hideAll">
 </div>
 
 <div class="mainContainer">
-  
+
 	<div id="header">
 		<div id="logo">
-			<img src="images/logo.jpg" alt="logo">  
+			<img src="images/logo.jpg" alt="logo">
 		</div>
 
 		<ul id="menu">
@@ -68,10 +68,13 @@
 			<li><a href="http://www.growthbeans.com/education/login/index.php" target="_blank">Mentorship</a></li>
 			<li  style="background-color:#009933;"><a href="#"  style="color:#ffffff;">In the News</a></li>
 			<li><a href="aboutUs.html">About Us</a></li>
-		</ul>  
+		</ul>
 
-		<ul id = "subMenu">
-		</ul>  
+    <ul id = "subMenu">
+      <li><a href="aboutUs.html"> Events  </a> </li>|
+      <li class = "activeSubLink"><a href="#"> In The News</a> </li>
+		</ul>
+
 		<div id = "pageBanner">
 			<div id="headerPhoto">
 				<img src="images/inTheNews/inTheNews_banner.jpg" alt="inTheNews_banner">
@@ -82,92 +85,92 @@
 				<p id="headerMoto2">Of Advice, Progress & More</p>
 			</div>
 		</div>
-	</div>    
-        
-		
-		
-		
-	<div id="contentWrapper">	
+	</div>
+
+
+
+
+	<div id="contentWrapper">
 
 		<table id="tableInTheNews">
 			<tr class="newsItem">
-			
+
 			<td class="newsInfo">
 			<p class="newsDate">14 January 2017</p>
 			<p class="newsTitle">Keep Calm and Carry On</p>
 			<p class="newsPublisher">The New Paper Classified</p>
 			<p class="newsExp">Mental resilience is an attitude and mindset that drives an individual to look at adversity in the face and never be defeated by challenges. Includes 6 tips to cope with change.</p>
 			</td>
-			
+
 			<td class="newsThumbnail">
 			<img src="images\inTheNews\th_14012017.jpg" alt="14012017.jpg">
 			</td>
-			
+
 			</tr>
-			
-			
-			
-			
-			
+
+
+
+
+
 			<tr class="newsItem">
-			
+
 			<td class="newsInfo">
 			<p class="newsDate">21 October 2016</p>
 			<p class="newsTitle">Making it Work</p>
 			<p class="newsPublisher">The New Paper Classified</p>
 			<p class="newsExp">Mentoring others at the workplace provides both the mentor and mentee a shared opportunity for learning and growth.  Includes 6 benefits of being a mentor.</p>
 			</td>
-			
+
 			<td class="newsThumbnail">
 			<img src="images\inTheNews\th_21092016.jpg" alt="21092016.jpg">
 			</td>
-			
+
 			</tr>
-			
-					
-			
-			
-			
+
+
+
+
+
 			<tr class="newsItem">
-			
+
 			<td class="newsInfo">
 			<p class="newsDate">26 September 2016</p>
 			<p class="newsTitle">Are you ready to be a mentor?</p>
 			<p class="newsPublisher">The Straits Times Classified</p>
 			<p class="newsExp">Mentoring is about taking the responsibility to help, and be accountable towards less experienced individuals. Includes 9 mentor traits and 3 questions to know if you are ready. </p>
 			</td>
-			
+
 			<td class="newsThumbnail">
 			<img src="images\inTheNews\th_26102016.jpg" alt="26102016.jpg">
 			</td>
-			
+
 			</tr>
-			
-			
-			
-					
-			
+
+
+
+
+
 			<tr class="newsItem">
-			
+
 			<td class="newsInfo">
 			<p class="newsDate">01 August 2016</p>
 			<p class="newsTitle">5 ways to be a good mentor</p>
 			<p class="newsPublisher">The New Paper Classified</p>
 			<p class="newsExp">Anyone with an area of expertise, the right mindset and preparation, the willingness and commitment can be a mentor. Includes 5 ways to be a good mentor.</p>
 			</td>
-			
+
 			<td class="newsThumbnail">
 			<img src="images\inTheNews\th_01082016.jpg" alt="01082016.jpg">
 			</td>
-			
+
 			</tr>
-					
-			
-			
-			
-			
+
+
+
+
+
 			<tr class="newsItem">
-			
+
 			<td class="newsInfo">
 			<p class="newsDate">16 July 2016</p>
 			<p class="newsTitle">Teach to Learn</p>
@@ -176,38 +179,38 @@
 			<p class="newsExtra">Also in SimplyHer - The Herworldplus Women&#39;s lifestyle portal &quot;Ways your career can benefit from being a mentor&quot; - 26 July 2016
 			<a href="http://www.herworldplus.com/solutions/solutions/ways-your-career-can-benefit-being-mentor" target="_blank">(Read more)</a></p>
 			</td>
-			
+
 			<td class="newsThumbnail">
 			<img src="images\inTheNews\th_16072016.jpg" alt="16072016.jpg">
 			</td>
-			
+
 			</tr>
-			
-			
-			
-			
-			
+
+
+
+
+
 			<tr class="newsItem">
-			
+
 			<td class="newsInfo">
 			<p class="newsDate">4 June 2016</p>
 			<p class="newsTitle">Set career goals for greater success</p>
 			<p class="newsPublisher">The Straits Times Recruit</p>
 			<p class="newsExp">When we set goals, we are creating our own definition of success. This gives us a sense of purpose and meaning, and the courage to take action. Includes 5 steps to your goal. </p>
 			</td>
-			
+
 			<td class="newsThumbnail">
 			<img src="images\inTheNews\th_04062016.jpg" alt="04062016.jpg">
 			</td>
-			
+
 			</tr>
-					
-			
-			
-			
-			
+
+
+
+
+
 			<tr class="newsItem">
-			
+
 			<td class="newsInfo">
 			<p class="newsDate">22 - 24 April 2016</p>
 			<p class="newsTitle">Taking Charge</p>
@@ -216,39 +219,31 @@
 			<p class="newsExtra">Also in SimplyHer - The Herworldplus Women&#39;s lifestyle portal &quot;Ways your career can benefit from being a mentor&quot; - 26 July 2016
 			<a href="http://themiddleground.sg/2016/04/22/everybody-one-step-right-chan-chun-sing/" target="_blank">(Read more)</a></p>
 			</td>
-			
+
 			<td class="newsThumbnail">
-			<img src="images\inTheNews\th_24042016.jpg" alt="24042016.jpg">			
-			</td>		
-			
-			</tr>		
+			<img src="images\inTheNews\th_24042016.jpg" alt="24042016.jpg">
+			</td>
+
+			</tr>
 		</table>
-			
-			
-			
-			
-			
+
+
+
+
+
 		<a href="#" class="scrollToTop">
 		<img src="images/arrow_up.png">
 		</a>
-				
-	
+
+
 	</div>
-		
-			
-		
-		
+
+
+
+
 	<div id="footer">
      (c) 2016-2017 Growthbeans. All Rights Reserved.</div>
  </div>
- 
+
  </body>
  </html>
- 
-    
-    
-    
-    
-    
- 
-  

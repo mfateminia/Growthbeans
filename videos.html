@@ -33,7 +33,7 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="events.html">Events</a></li>
 			<li><a href="http://www.growthbeans.com/education/login/index.php" target="_blank">Mentorship</a></li>
-			<li><a href="inTheNews.html">In the News</a></li>
+			<li style="background-color:#009933;"><a href="videos.html"  style="color:#ffffff;">Professions</a></li>
 			<li><a href="aboutUs.html">About Us</a></li>
 		</ul>
 
@@ -49,12 +49,14 @@
 	</div>
 
 		<div id="contentWrapper" ng-controller = "videoCtrl as ctrl">
-      <div id = "videoPoll">
-        <div id = "closeThePoll"><a href="#">Close</a></div>
+
+      <div id = "videoPoll"  ng-if = "ctrl.showThePoll">
+        <div id = "closeThePoll" ng-click = "ctrl.closePoll()"><a href="#">Close</a></div>
         <iframe frameborder='0' src='https://poll.fbapp.io/embed/professions-you-would-like-to-know-more-of?api=3.5.1' width='100%'></iframe>
         <script src="https://code-rubik-cdn.s3.amazonaws.com/iframeresizer/3.5.1/host.js"></script>
         <script type='text/javascript'>iFrameResize({ enablePublicMethods: true, minHeight: 230 })</script>
       </div>
+
       <div id="videoPack">
           <div id="videoEmbeded">
             <div id="videoTitle"><span style = 'font-weight:bold'>Social Work:</span> {{ctrl.currentVideoTitle}}</div>
@@ -77,9 +79,9 @@
             </p>
           </div>
           <div id="fb-comments">
-              <div class="fb-comments" data-href="http://www.growthbeans.com" data-numposts="5"></div>
+              <div class="fb-comments" data-href="http://www.growthbeans.com/videos.html" data-numposts="5"></div>
           </div>
-          <div id="pollWrapper">
+          <div id="pollWrapper" ng-click = "ctrl.openPoll()">
             <a href = "#"><div id="pollBut">
               Professions you would like to know more of...
             </div></a>
