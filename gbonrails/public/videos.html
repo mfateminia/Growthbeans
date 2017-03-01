@@ -50,12 +50,12 @@
 
 		<div id="contentWrapper" ng-controller = "videoCtrl as ctrl">
 
-      <div id = "videoPoll"  ng-if = "ctrl.showThePoll">
+      <!-- <div id = "videoPoll"  ng-if = "ctrl.showThePoll">
         <div id = "closeThePoll" ng-click = "ctrl.closePoll()"><a href="#">Close</a></div>
         <iframe frameborder='0' src='https://poll.fbapp.io/embed/professions-you-would-like-to-know-more-of?api=3.5.1' width='100%'></iframe>
         <script src="https://code-rubik-cdn.s3.amazonaws.com/iframeresizer/3.5.1/host.js"></script>
         <script type='text/javascript'>iFrameResize({ enablePublicMethods: true, minHeight: 230 })</script>
-      </div>
+      </div> -->
 
       <div id="videoPack">
           <div id="videoEmbeded">
@@ -66,7 +66,7 @@
           <div id="videoPlayList">
             <ul>
               <li ng-repeat = "item in ctrl.collection">
-                <a href="#"><img ng-click="ctrl.playThis($index)" src="images/videos/thumbnails/{{item.thumbnail}}" alt="social_work_1"></a>
+                <a href="#"><img ng-click="ctrl.playThis($index)" src="images/videos/thumbnails/{{item.thumbnail}}" alt="social_work_{{$index+1}}"></a>
               </li>
             </ul>
           </div>

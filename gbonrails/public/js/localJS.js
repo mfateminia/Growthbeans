@@ -24,7 +24,6 @@ function init(){
 			vm.currentVideoLink =  $sce.trustAsResourceUrl(videoService.videoList[currentIndex].link);
 		};
 
-
 		vm.openPoll = function(){
 			vm.showThePoll = true;
 		}
