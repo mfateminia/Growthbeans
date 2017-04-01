@@ -6,27 +6,25 @@ function init(){
 
 (function(){
 	angular.module("videoPlay", [])
-	.controller("videoCtrl", videoCtrl)
-	.filter("makeHTML", makeHTMLFilterFactory);
+	.controller("videoCtrl", videoCtrl);
 
-	videoCtrl.$inject = ['$sce', '$http', 'makeHTMLFilter'];
-	function videoCtrl($sce, $http, makeHTMLFilter){
+	videoCtrl.$inject = ['$sce', '$http'];
+	function videoCtrl($sce, $http){
 		var vm = this;
 		var currentIndex = 0;
 
-		$http.get('assets/javascript/db.json')
+		$http.get('model/videos.php', {params:{"category": "social services", "title": "social worker"}})
 		.success(function(response){
-			vm.collection = response.videos;
-
+			vm.collection = response;
 
 //load current video
 		vm.currentVideoTitle = vm.collection[currentIndex].title;
-		vm.currentVideoLink =  $sce.trustAsResourceUrl(makeHTMLFilter(vm.collection[currentIndex].link));
+		vm.currentVideoLink =  $sce.trustAsResourceUrl(vm.collection[currentIndex].link);
 
 //load playlist
 		vm.playThis = function(currentIndex){
 			vm.currentVideoTitle = vm.collection[currentIndex].title;
-			vm.currentVideoLink =  $sce.trustAsResourceUrl(makeHTMLFilter(vm.collection[currentIndex].link));
+			vm.currentVideoLink =  $sce.trustAsResourceUrl(vm.collection[currentIndex].link);
 		}
 });
 //open and close fb pool
@@ -36,13 +34,6 @@ function init(){
 		}
 		vm.closePoll = function(){
 			vm.showThePoll = false;
-		}
-	}
-
-//prepend https://www.youtube.com/embed/ to the link code
-	function makeHTMLFilterFactory(){
-		return function(input){
-			return 'https://www.youtube.com/embed/' + input;
 		}
 	}
 })();
