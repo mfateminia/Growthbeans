@@ -12,7 +12,7 @@ function init(){
 	videoCtrl.$inject = ['$sce', '$http', 'makeHTMLFilter'];
 	function videoCtrl($sce, $http, makeHTMLFilter){
 		var vm = this;
-		var currentIndex = 1;
+		var currentIndex = 0;
 
 		$http.get('assets/javascript/db.json')
 		.success(function(response){
