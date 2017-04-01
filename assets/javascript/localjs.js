@@ -14,7 +14,7 @@ function init(){
 		var vm = this;
 		var currentIndex = 1;
 
-		$http.get('json/db.json')
+		$http.get('assets/javascript/db.json')
 		.success(function(response){
 			vm.collection = response.videos;
 
