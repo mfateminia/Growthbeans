@@ -1,10 +1,10 @@
 <!doctype html>
 
 <head>
-  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="assets/styles/styles.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <script src="js/localJS.js"></script>
+  <script src="assets/javascript/localjs.js"></script>
 </head>
 
 
@@ -26,7 +26,7 @@
 
 	<div id="header">
 		<div id="logo">
-			<img src="images/logo.jpg" alt="logo">
+			<img src="assets/images/logo.jpg" alt="logo">
 		</div>
 
 		<ul id="menu">
@@ -34,7 +34,7 @@
 			<li><a href="events.html">Events</a></li>
 			<li><a href="http://www.growthbeans.com/education/login/index.php" target="_blank">Mentorship</a></li>
 			<li style="background-color:#009933;"><a href="videos.html"  style="color:#ffffff;">Professions</a></li>
-			<li><a href="aboutUs.html">About Us</a></li>
+			<li><a href="about_us.html">About Us</a></li>
 		</ul>
 
 		<ul id = "subMenu">
@@ -66,14 +66,14 @@
           <div id="videoPlayList">
             <ul>
               <li ng-repeat = "item in ctrl.collection">
-                <a href="#"><img ng-click="ctrl.playThis($index)" src="images/videos/thumbnails/{{item.thumbnail}}" alt="social_work_1"></a>
+                <a href="#"><img ng-click="ctrl.playThis($index)" src="assets/images/videos/thumbnails/{{item.thumbnail}}" alt="social_work_1"></a>
               </li>
             </ul>
           </div>
 
           <div id="videoBiography">
             <h5>About Alvin Chen</h5>
-            <img src="images/videos/people/alvin_chen_social_work.jpg" alt="">
+            <img src="assets/images/videos/people/alvin_chen_social_work.jpg" alt="">
             <p>
               Alvin Chen is an internationally licensed Coach and Social Worker, with 11 years of Social Work experience working with families and youths. In the work that he does, he enables non profit organisations to create communities of inclusion and celebrate diversity in people profiles. He promotes sustainable lifestyle practices that self-generate resources and give back toward society and the environment. Watch his videos to find out more on Social Work.
             </p>
